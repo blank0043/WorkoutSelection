@@ -20,9 +20,9 @@
 		F73ABEF01C06B2C400B8C048 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F73ABEEF1C06B2C400B8C048 /* libsqlite3.tbd */; };
 		F73ABEF21C06B2FD00B8C048 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73ABEF11C06B2FD00B8C048 /* Accounts.framework */; };
 		F73ABEF41C06B31D00B8C048 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73ABEF31C06B31D00B8C048 /* Social.framework */; };
-		F743A3961C0EAF9200C074C3 /* AddPastWorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A3951C0EAF9200C074C3 /* AddPastWorkoutViewController.m */; };
-		F743A3991C0EBE8100C074C3 /* EditWorkoutDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A3981C0EBE8100C074C3 /* EditWorkoutDataViewController.m */; };
-		F743A39C1C0EE82900C074C3 /* PastWorkoutsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F743A39B1C0EE82900C074C3 /* PastWorkoutsViewController.m */; };
+		F755E4FE1C5406D000B7C3CB /* TakePictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755E4FD1C5406D000B7C3CB /* TakePictureViewController.m */; };
+		F755E5011C54272600B7C3CB /* ActivitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F755E5001C54272600B7C3CB /* ActivitiesViewController.m */; };
+		F75AA2B91C534076003790E8 /* baymax2.png in Resources */ = {isa = PBXBuildFile; fileRef = F75AA2B81C534076003790E8 /* baymax2.png */; };
 		F767D7971C0BC5B300A0AC49 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F767D7961C0BC5B300A0AC49 /* DetailsViewController.m */; };
 		F767D79D1C0CE47100A0AC49 /* NewWorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F767D79C1C0CE47100A0AC49 /* NewWorkoutViewController.m */; };
 		F7919FF61C06B7A1001B8C0E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7919FF31C06B7A1001B8C0E /* Bolts.framework */; };
@@ -32,21 +32,25 @@
 		F7919FFE1C0790C4001B8C0E /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7919FFD1C0790C4001B8C0E /* SignupViewController.m */; };
 		F79788A91BFC287700884700 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F79788A81BFC287700884700 /* main.m */; };
 		F79788AC1BFC287700884700 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F79788AB1BFC287700884700 /* AppDelegate.m */; };
-		F79788AF1BFC287700884700 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79788AE1BFC287700884700 /* FirstViewController.m */; };
-		F79788B21BFC287700884700 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79788B11BFC287700884700 /* SecondViewController.m */; };
-		F79788B51BFC287700884700 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79788B31BFC287700884700 /* Main.storyboard */; };
 		F79788B71BFC287700884700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F79788B61BFC287700884700 /* Assets.xcassets */; };
 		F79788BA1BFC287700884700 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79788B81BFC287700884700 /* LaunchScreen.storyboard */; };
 		F79788C51BFC287700884700 /* WorkoutSelectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F79788C41BFC287700884700 /* WorkoutSelectionTests.m */; };
 		F79788D01BFC287700884700 /* WorkoutSelectionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F79788CF1BFC287700884700 /* WorkoutSelectionUITests.m */; };
-		F79788DE1BFC2B9E00884700 /* MuscularManPosing.png in Resources */ = {isa = PBXBuildFile; fileRef = F79788DD1BFC2B9E00884700 /* MuscularManPosing.png */; };
 		F7A4B2971BFED08E00A90F09 /* WorkoutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A4B2961BFED08E00A90F09 /* WorkoutTableViewController.m */; };
 		F7B45A4A1C14F29C00ABE0CA /* running.png in Resources */ = {isa = PBXBuildFile; fileRef = F7B45A491C14F29C00ABE0CA /* running.png */; };
-		F7B45A4E1C14F64D00ABE0CA /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = F7B45A4B1C14F64D00ABE0CA /* plus.png */; };
 		F7B45A531C14F7F300ABE0CA /* blueWeight.png in Resources */ = {isa = PBXBuildFile; fileRef = F7B45A511C14F7F300ABE0CA /* blueWeight.png */; };
 		F7B45A541C14F7F300ABE0CA /* orangeWorkbook.png in Resources */ = {isa = PBXBuildFile; fileRef = F7B45A521C14F7F300ABE0CA /* orangeWorkbook.png */; };
 		F7CCF3AE1C14E6C70081AC26 /* summerPark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7CCF3AD1C14E6C70081AC26 /* summerPark.jpg */; };
 		F7CCF3B01C14E9500081AC26 /* profile_icons.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CCF3AF1C14E9500081AC26 /* profile_icons.png */; };
+		F7F547741C54D239008EF1E5 /* baymaxvig2.png in Resources */ = {isa = PBXBuildFile; fileRef = F7F547731C54D239008EF1E5 /* baymaxvig2.png */; };
+		F7F547761C54D683008EF1E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F547751C54D683008EF1E5 /* Main.storyboard */; };
+		F7F547831C54E3EB008EF1E5 /* IntermediateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F547821C54E3EB008EF1E5 /* IntermediateViewController.m */; };
+		F7F547851C54FCE1008EF1E5 /* philadelphia-skyline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7F547841C54FCE1008EF1E5 /* philadelphia-skyline.jpg */; };
+		F7F5478B1C5503C0008EF1E5 /* baymaxhero.png in Resources */ = {isa = PBXBuildFile; fileRef = F7F547861C5503C0008EF1E5 /* baymaxhero.png */; };
+		F7F5478C1C5503C0008EF1E5 /* baymaxrookie.png in Resources */ = {isa = PBXBuildFile; fileRef = F7F547871C5503C0008EF1E5 /* baymaxrookie.png */; };
+		F7F5478D1C5503C0008EF1E5 /* baymaxsidekick.png in Resources */ = {isa = PBXBuildFile; fileRef = F7F547881C5503C0008EF1E5 /* baymaxsidekick.png */; };
+		F7F5478E1C5503C0008EF1E5 /* baymaxvigilante.png in Resources */ = {isa = PBXBuildFile; fileRef = F7F547891C5503C0008EF1E5 /* baymaxvigilante.png */; };
+		F7F5478F1C5503C0008EF1E5 /* baymaxwarrior.png in Resources */ = {isa = PBXBuildFile; fileRef = F7F5478A1C5503C0008EF1E5 /* baymaxwarrior.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,12 +86,11 @@
 		F73ABEEF1C06B2C400B8C048 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		F73ABEF11C06B2FD00B8C048 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		F73ABEF31C06B31D00B8C048 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		F743A3941C0EAF9200C074C3 /* AddPastWorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPastWorkoutViewController.h; sourceTree = "<group>"; };
-		F743A3951C0EAF9200C074C3 /* AddPastWorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPastWorkoutViewController.m; sourceTree = "<group>"; };
-		F743A3971C0EBE8100C074C3 /* EditWorkoutDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditWorkoutDataViewController.h; sourceTree = "<group>"; };
-		F743A3981C0EBE8100C074C3 /* EditWorkoutDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditWorkoutDataViewController.m; sourceTree = "<group>"; };
-		F743A39A1C0EE82900C074C3 /* PastWorkoutsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastWorkoutsViewController.h; sourceTree = "<group>"; };
-		F743A39B1C0EE82900C074C3 /* PastWorkoutsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastWorkoutsViewController.m; sourceTree = "<group>"; };
+		F755E4FC1C5406D000B7C3CB /* TakePictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePictureViewController.h; sourceTree = "<group>"; };
+		F755E4FD1C5406D000B7C3CB /* TakePictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePictureViewController.m; sourceTree = "<group>"; };
+		F755E4FF1C54272600B7C3CB /* ActivitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitiesViewController.h; sourceTree = "<group>"; };
+		F755E5001C54272600B7C3CB /* ActivitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesViewController.m; sourceTree = "<group>"; };
+		F75AA2B81C534076003790E8 /* baymax2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = baymax2.png; path = ../baymax2.png; sourceTree = "<group>"; };
 		F767D7951C0BC5B300A0AC49 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		F767D7961C0BC5B300A0AC49 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		F767D79B1C0CE47100A0AC49 /* NewWorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewWorkoutViewController.h; sourceTree = "<group>"; };
@@ -103,11 +106,6 @@
 		F79788A81BFC287700884700 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F79788AA1BFC287700884700 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F79788AB1BFC287700884700 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F79788AD1BFC287700884700 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		F79788AE1BFC287700884700 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		F79788B01BFC287700884700 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		F79788B11BFC287700884700 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		F79788B41BFC287700884700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F79788B61BFC287700884700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F79788B91BFC287700884700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F79788BB1BFC287700884700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,15 +115,23 @@
 		F79788CB1BFC287700884700 /* WorkoutSelectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutSelectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F79788CF1BFC287700884700 /* WorkoutSelectionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkoutSelectionUITests.m; sourceTree = "<group>"; };
 		F79788D11BFC287700884700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F79788DD1BFC2B9E00884700 /* MuscularManPosing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MuscularManPosing.png; path = ../../../MuscularManPosing.png; sourceTree = "<group>"; };
 		F7A4B2951BFED08E00A90F09 /* WorkoutTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutTableViewController.h; path = ../WorkoutTableViewController.h; sourceTree = "<group>"; };
 		F7A4B2961BFED08E00A90F09 /* WorkoutTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutTableViewController.m; path = ../WorkoutTableViewController.m; sourceTree = "<group>"; };
 		F7B45A491C14F29C00ABE0CA /* running.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = running.png; sourceTree = "<group>"; };
-		F7B45A4B1C14F64D00ABE0CA /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		F7B45A511C14F7F300ABE0CA /* blueWeight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueWeight.png; sourceTree = "<group>"; };
 		F7B45A521C14F7F300ABE0CA /* orangeWorkbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangeWorkbook.png; sourceTree = "<group>"; };
 		F7CCF3AD1C14E6C70081AC26 /* summerPark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = summerPark.jpg; sourceTree = "<group>"; };
 		F7CCF3AF1C14E9500081AC26 /* profile_icons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_icons.png; sourceTree = "<group>"; };
+		F7F547731C54D239008EF1E5 /* baymaxvig2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = baymaxvig2.png; path = ../../../../Desktop/baymaxvig2.png; sourceTree = "<group>"; };
+		F7F547751C54D683008EF1E5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
+		F7F547811C54E3EB008EF1E5 /* IntermediateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntermediateViewController.h; sourceTree = "<group>"; };
+		F7F547821C54E3EB008EF1E5 /* IntermediateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntermediateViewController.m; sourceTree = "<group>"; };
+		F7F547841C54FCE1008EF1E5 /* philadelphia-skyline.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "philadelphia-skyline.jpg"; path = "../../../../Desktop/philadelphia-skyline.jpg"; sourceTree = "<group>"; };
+		F7F547861C5503C0008EF1E5 /* baymaxhero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = baymaxhero.png; path = ../../../../Desktop/baymaxhero.png; sourceTree = "<group>"; };
+		F7F547871C5503C0008EF1E5 /* baymaxrookie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = baymaxrookie.png; path = ../../../../Desktop/baymaxrookie.png; sourceTree = "<group>"; };
+		F7F547881C5503C0008EF1E5 /* baymaxsidekick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = baymaxsidekick.png; path = ../../../../Desktop/baymaxsidekick.png; sourceTree = "<group>"; };
+		F7F547891C5503C0008EF1E5 /* baymaxvigilante.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = baymaxvigilante.png; path = ../../../../Desktop/baymaxvigilante.png; sourceTree = "<group>"; };
+		F7F5478A1C5503C0008EF1E5 /* baymaxwarrior.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = baymaxwarrior.png; path = ../../../../Desktop/baymaxwarrior.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,36 +216,38 @@
 		F79788A61BFC287700884700 /* WorkoutSelection */ = {
 			isa = PBXGroup;
 			children = (
+				F7F547811C54E3EB008EF1E5 /* IntermediateViewController.h */,
+				F7F547861C5503C0008EF1E5 /* baymaxhero.png */,
+				F7F547871C5503C0008EF1E5 /* baymaxrookie.png */,
+				F7F547881C5503C0008EF1E5 /* baymaxsidekick.png */,
+				F7F547891C5503C0008EF1E5 /* baymaxvigilante.png */,
+				F7F5478A1C5503C0008EF1E5 /* baymaxwarrior.png */,
+				F7F547821C54E3EB008EF1E5 /* IntermediateViewController.m */,
+				F755E4FF1C54272600B7C3CB /* ActivitiesViewController.h */,
+				F755E5001C54272600B7C3CB /* ActivitiesViewController.m */,
+				F755E4FC1C5406D000B7C3CB /* TakePictureViewController.h */,
+				F755E4FD1C5406D000B7C3CB /* TakePictureViewController.m */,
 				F7919FF91C06BAFE001B8C0E /* logInViewController.h */,
 				F7919FFA1C06BAFE001B8C0E /* logInViewController.m */,
 				F7919FFC1C0790C4001B8C0E /* SignupViewController.h */,
 				F7919FFD1C0790C4001B8C0E /* SignupViewController.m */,
 				F79788AA1BFC287700884700 /* AppDelegate.h */,
+				F7F547841C54FCE1008EF1E5 /* philadelphia-skyline.jpg */,
 				F79788AB1BFC287700884700 /* AppDelegate.m */,
 				F767D79B1C0CE47100A0AC49 /* NewWorkoutViewController.h */,
 				F767D79C1C0CE47100A0AC49 /* NewWorkoutViewController.m */,
-				F79788AD1BFC287700884700 /* FirstViewController.h */,
-				F79788AE1BFC287700884700 /* FirstViewController.m */,
-				F79788B01BFC287700884700 /* SecondViewController.h */,
-				F79788B11BFC287700884700 /* SecondViewController.m */,
 				F7A4B2951BFED08E00A90F09 /* WorkoutTableViewController.h */,
 				F7A4B2961BFED08E00A90F09 /* WorkoutTableViewController.m */,
+				F7F547751C54D683008EF1E5 /* Main.storyboard */,
 				F767D7951C0BC5B300A0AC49 /* DetailsViewController.h */,
+				F7F547731C54D239008EF1E5 /* baymaxvig2.png */,
 				F767D7961C0BC5B300A0AC49 /* DetailsViewController.m */,
-				F79788DD1BFC2B9E00884700 /* MuscularManPosing.png */,
+				F75AA2B81C534076003790E8 /* baymax2.png */,
 				F7B45A491C14F29C00ABE0CA /* running.png */,
-				F79788B31BFC287700884700 /* Main.storyboard */,
 				F7CCF3AF1C14E9500081AC26 /* profile_icons.png */,
 				F7CCF3AD1C14E6C70081AC26 /* summerPark.jpg */,
-				F7B45A4B1C14F64D00ABE0CA /* plus.png */,
 				F7B45A511C14F7F300ABE0CA /* blueWeight.png */,
 				F7B45A521C14F7F300ABE0CA /* orangeWorkbook.png */,
-				F743A3941C0EAF9200C074C3 /* AddPastWorkoutViewController.h */,
-				F743A3951C0EAF9200C074C3 /* AddPastWorkoutViewController.m */,
-				F743A39A1C0EE82900C074C3 /* PastWorkoutsViewController.h */,
-				F743A39B1C0EE82900C074C3 /* PastWorkoutsViewController.m */,
-				F743A3971C0EBE8100C074C3 /* EditWorkoutDataViewController.h */,
-				F743A3981C0EBE8100C074C3 /* EditWorkoutDataViewController.m */,
 				F79788B61BFC287700884700 /* Assets.xcassets */,
 				F79788B81BFC287700884700 /* LaunchScreen.storyboard */,
 				F79788BB1BFC287700884700 /* Info.plist */,
@@ -341,6 +349,12 @@
 				TargetAttributes = {
 					F79788A31BFC287700884700 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = SACNCM6XH6;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					F79788BF1BFC287700884700 = {
 						CreatedOnToolsVersion = 7.2;
@@ -378,15 +392,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7B45A4A1C14F29C00ABE0CA /* running.png in Resources */,
-				F79788DE1BFC2B9E00884700 /* MuscularManPosing.png in Resources */,
+				F7F547761C54D683008EF1E5 /* Main.storyboard in Resources */,
+				F75AA2B91C534076003790E8 /* baymax2.png in Resources */,
 				F7B45A541C14F7F300ABE0CA /* orangeWorkbook.png in Resources */,
+				F7F5478D1C5503C0008EF1E5 /* baymaxsidekick.png in Resources */,
+				F7F547741C54D239008EF1E5 /* baymaxvig2.png in Resources */,
+				F7F5478E1C5503C0008EF1E5 /* baymaxvigilante.png in Resources */,
+				F7F5478B1C5503C0008EF1E5 /* baymaxhero.png in Resources */,
+				F7F5478C1C5503C0008EF1E5 /* baymaxrookie.png in Resources */,
+				F7F547851C54FCE1008EF1E5 /* philadelphia-skyline.jpg in Resources */,
 				F79788BA1BFC287700884700 /* LaunchScreen.storyboard in Resources */,
 				F7CCF3AE1C14E6C70081AC26 /* summerPark.jpg in Resources */,
+				F7F5478F1C5503C0008EF1E5 /* baymaxwarrior.png in Resources */,
 				F79788B71BFC287700884700 /* Assets.xcassets in Resources */,
 				F7B45A531C14F7F300ABE0CA /* blueWeight.png in Resources */,
 				F7CCF3B01C14E9500081AC26 /* profile_icons.png in Resources */,
-				F79788B51BFC287700884700 /* Main.storyboard in Resources */,
-				F7B45A4E1C14F64D00ABE0CA /* plus.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,16 +433,14 @@
 			files = (
 				F7919FFB1C06BAFE001B8C0E /* logInViewController.m in Sources */,
 				F767D79D1C0CE47100A0AC49 /* NewWorkoutViewController.m in Sources */,
-				F79788B21BFC287700884700 /* SecondViewController.m in Sources */,
+				F755E5011C54272600B7C3CB /* ActivitiesViewController.m in Sources */,
 				F79788AC1BFC287700884700 /* AppDelegate.m in Sources */,
-				F743A39C1C0EE82900C074C3 /* PastWorkoutsViewController.m in Sources */,
-				F743A3991C0EBE8100C074C3 /* EditWorkoutDataViewController.m in Sources */,
 				F7A4B2971BFED08E00A90F09 /* WorkoutTableViewController.m in Sources */,
-				F79788AF1BFC287700884700 /* FirstViewController.m in Sources */,
 				F767D7971C0BC5B300A0AC49 /* DetailsViewController.m in Sources */,
 				F7919FFE1C0790C4001B8C0E /* SignupViewController.m in Sources */,
-				F743A3961C0EAF9200C074C3 /* AddPastWorkoutViewController.m in Sources */,
+				F755E4FE1C5406D000B7C3CB /* TakePictureViewController.m in Sources */,
 				F79788A91BFC287700884700 /* main.m in Sources */,
+				F7F547831C54E3EB008EF1E5 /* IntermediateViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,14 +476,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F79788B31BFC287700884700 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F79788B41BFC287700884700 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F79788B81BFC287700884700 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -561,14 +571,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = WorkoutSelection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.WorkoutSelection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -576,14 +590,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = WorkoutSelection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.WorkoutSelection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

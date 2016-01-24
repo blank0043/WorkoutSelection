@@ -29,32 +29,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)deleteWorkout:(id)sender {
-    if ([_shouldDelete isEqualToString:@"delete"]) {
-        PFQuery *query = [PFQuery queryWithClassName:@"WorkoutCreated"];
-        [query getObjectInBackgroundWithId:_workoutId block:^(PFObject *workout, NSError *error) {
-            // Do something with the returned PFObject in the gameScore variable.
-            if ([_taskNameText isEqualToString: workout[@"task1"]]) {
-                workout[@"task1"] = @"";
-                [workout saveInBackground];
-            }
-            else if ([_taskNameText isEqualToString: workout[@"task2"]]) {
-                workout[@"task2"] = @"";
-                [workout saveInBackground];
-            }
-            else if ([_taskNameText isEqualToString: workout[@"task3"]]) {
-                workout[@"task3"] = @"";
-                [workout saveInBackground];
-            }
-            else if ([_taskNameText isEqualToString: workout[@"task4"]]) {
-                workout[@"task4"] = @"";
-                [workout saveInBackground];
-            }
-
-        }];
-        [self performSegueWithIdentifier:@"workouts" sender:self];
-    }
-}
 
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation

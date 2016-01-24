@@ -15,9 +15,15 @@
 @property (strong, nonatomic) NSString *workoutName;
 @property (strong, nonatomic) NSString *primaryKey;
 
+@property (strong, nonatomic) NSNumber *targetLongitude;
+@property (strong, nonatomic) NSNumber *targetLatitude;
+@property (strong, nonatomic) NSString *userPoints;
 
 @property (strong, nonatomic) NSMutableArray *taskNames;
-@property (strong, nonatomic) NSMutableArray *workoutIds;
+@property (strong, nonatomic) NSMutableArray *targetLatitudes;
+@property (strong, nonatomic) NSMutableArray *targetLongitudes;
+
+
 
 @property (strong, nonatomic) IBOutlet UITableView *mainTableView;
 

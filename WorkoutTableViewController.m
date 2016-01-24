@@ -7,9 +7,7 @@
 //
 
 #import "WorkoutTableViewController.h"
-#import "DetailsViewController.h"
-#import "FirstViewController.h"
-#import "AddPastWorkoutViewController.h"
+#import "ActivitiesViewController.h"
 #import <Parse/Parse.h>
 
 @interface WorkoutTableViewController ()
@@ -24,18 +22,20 @@
 @synthesize mainTableView;
 
 @synthesize taskNames;
-
-@synthesize workoutIds;
+@synthesize targetLatitudes;
+@synthesize targetLongitudes;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     taskNames = [[NSMutableArray alloc] init];
-    workoutIds = [[NSMutableArray alloc] init];
+    targetLatitudes = [[NSMutableArray alloc] init];
+    targetLongitudes = [[NSMutableArray alloc] init];
+    
     // Do any additional setup after loading the view.
-    PFQuery *query = [PFQuery queryWithClassName:@"WorkoutCreated"];
+    PFQuery *query = [PFQuery queryWithClassName:@"Activities"];
     //changeprimarykey to _objectId
-    [query whereKey:@"workoutName" equalTo:_workoutName];
+//    [query whereKey:@"workoutName" equalTo:_workoutName];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             // The find succeeded.
@@ -43,29 +43,16 @@
             tableData = objects;
             // Do something with the found objects
             for (PFObject *object in objects) {
-                NSString *workout1 = object[@"task1"];
-                NSString *workout2 = object[@"task2"];
-                NSString *workout3 = object[@"task3"];
-                NSString *workout4 = object[@"task4"];
                 
-                if (workout1.length > 0) {
-                    [taskNames addObject:workout1];
-                    [workoutIds addObject:object.objectId];
-                }
-                if (workout2.length > 0) {
-                    [taskNames addObject:workout2];
-                    [workoutIds addObject:object.objectId];
-                }
-                if (workout3.length > 0) {
-                    [taskNames addObject:workout3];
-                    [workoutIds addObject:object.objectId];
-                }
-                if (workout4.length > 0) {
-                    [taskNames addObject:workout4];
-                    [workoutIds addObject:object.objectId];
-                }
+                NSString *taskName = object[@"TaskName"];
+                [taskNames addObject:taskName];
                 
+                NSNumber *latitude = object[@"Latitude"];
+                [targetLatitudes addObject:latitude];
                 
+                NSNumber *longitude = object[@"Longitude"];
+                [targetLongitudes addObject:longitude];
+                [mainTableView reloadData];
             }
         } else {
             // Log details of the failure
@@ -111,7 +98,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     _individualTaskName = [taskNames objectAtIndex:indexPath.row];
-    _workoutId = [workoutIds objectAtIndex:indexPath.row];
+    _targetLatitude = [targetLatitudes objectAtIndex:indexPath.row];
+    _targetLongitude = [targetLongitudes objectAtIndex:indexPath.row];
     [self performSegueWithIdentifier:@"detail" sender:self];
 }
 
@@ -125,61 +113,16 @@
     // Pass the selected object to the new view controller.
     if ([[segue identifier] isEqualToString:@"detail"]){
         
-        DetailsViewController *vc = [segue destinationViewController];
-        vc.taskNameText = _individualTaskName;
-        vc.shouldDelete = @"delete";
-        vc.workoutId = _workoutId;
-        vc.workoutName = _workoutName;
+        ActivitiesViewController *vc = [segue destinationViewController];
+        vc.taskName.text = _individualTaskName;
+        vc.targetLatitude = _targetLatitude;
+        vc.targetLongitude = _targetLongitude;
+        vc.name = _individualTaskName;
+        vc.userPoints = _userPoints;
+        NSLog(@"%@", _individualTaskName);
         
-        
-        
-        
-        PFQuery *muscles = [PFQuery queryWithClassName:@"Workout"];
-        [muscles whereKey:@"workoutName" equalTo:_individualTaskName];
-        
-        PFObject *workoutObject = [muscles getFirstObject];
-        PFFile *pictureFile = workoutObject[@"workoutExample"];
-        vc.workoutInstructions = workoutObject[@"Instructions"];
-        if(pictureFile != NULL)
-        {
-            
-            [pictureFile getDataInBackgroundWithBlock:^(NSData *imageData, NSError *error) {
-                
-                UIImage *thumbnailImage = [UIImage imageWithData:imageData];
-                
-                vc.picture.image = thumbnailImage;
-                
-            }];
-            
-        }
     }
-    else if ([[segue identifier] isEqualToString:@"firstViewController"]) {
-        FirstViewController *vc = [segue destinationViewController];
-        vc.workoutName = _workoutName;
-        // temp deleted add if primaryKey/ id needed  ... vc.workoutId = _primaryKey;
-    }
-    else if ([[segue identifier] isEqualToString:@"beginWorkout"]) {
-        AddPastWorkoutViewController *vc = [segue destinationViewController];
-        vc.taskNames = taskNames;
-        vc.workoutName = _workoutName;
-        vc.workoutData = [[NSMutableArray alloc]init];
-        for (NSString *taskName in taskNames) {
-            
-            [vc.workoutData addObject: taskName];
-            [vc.workoutData addObject:@"          Sets: 0"];
-            [vc.workoutData addObject:@"          Reps: 0"];
-            [vc.workoutData addObject:@"          Weight: 0"];
-            
-        }
-        
-        
-        
-        vc.sets = [NSString stringWithFormat:@"          Sets: 0"];
-        vc.reps = [NSString stringWithFormat:@"          Reps: 0"];
-        vc.weight = [NSString stringWithFormat:@"          Weight: 0"];
-
-        // temp deleted add if primaryKey/ id needed  ... vc.workoutId = _primaryKey;
-    }
+       
     
     
 }
